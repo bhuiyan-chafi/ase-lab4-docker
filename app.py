@@ -171,3 +171,6 @@ def save_last(op, args, res):
 if __name__ == '__main__':
     # app.run(debug=True) - this will not work in docker because docker will not allow external connections. we have to use host="0.0.0.0". After runing the container in docker, if you see the host is 127.0.0.1 which means it cannot be accessed from outside. It should be 0.0.0.0 as host.
     app.run(host="0.0.0.0", port=5000, debug=True)
+    # I don't know what the fuck was wrong first time, but later I tested with another Dockerfile keep the settings below and it worked
+    # without any issues
+    # app.run(debug=True) - yes you can fucking keep it

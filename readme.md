@@ -13,3 +13,7 @@
 
     - docker volume create lab3
     - docker run -p 5005:5000 --name lab3 --mount source=lab3,target=/app lab3-app
+
+# The Dockerfile_exception
+
+I don't know what was wrong first time! Even chatgpt said some bullshit but the solution works keeping app.run(debug=True). You can see the Dockerfile_exception for the changes. The debugger might not work becuse I haven't added any volumes but I think if I do so it will work. But its sure that the debug=True inside app.run() doesn't work. You have to mention the --debug inside the dockerfile.
